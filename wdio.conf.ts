@@ -1,5 +1,8 @@
 import DurationReporter from "./DurationReporter";
 import CustomService from "./CustomService";
+import path from 'path';
+
+const tmpDir = path.join(process.env.GITHUB_WORKSPACE, 'tmp', `webdriverio_userdata_${Date.now()}`);
 
 export const config: WebdriverIO.Config = {
     //
@@ -60,7 +63,12 @@ export const config: WebdriverIO.Config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        browserName: 'chrome'
+        browserName: 'chrome',
+        'goog:chromeOptions': {
+            args: [
+                `--user-data-dir=${tmpDir}` 
+            ]
+    }
     }],
 
     //

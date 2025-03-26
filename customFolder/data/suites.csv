@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","3642","should be PWA","","Wed Mar 26 15:24:52 CET 2025","passed","Wed Mar 26 15:24:56 CET 2025","","check PWA","",""
+"","1545","should be able to complete todos","","Wed Mar 26 15:24:34 CET 2025","passed","Wed Mar 26 15:24:36 CET 2025","","example test","",""
+"","16230","should load with good performance score","","Wed Mar 26 15:24:36 CET 2025","passed","Wed Mar 26 15:24:52 CET 2025","","lighthouse (local)","",""
+"","0","should load with good speed index","","Wed Mar 26 15:24:52 CET 2025","skipped","Wed Mar 26 15:24:52 CET 2025","","lighthouse (cloud)","",""

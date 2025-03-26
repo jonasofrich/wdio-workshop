@@ -63,7 +63,7 @@ export const config: WebdriverIO.Config = {
         browserName: 'chrome',
         "goog:chromeOptions": {
             args: [
-                '--user-data-dir=/tmp/webdriverio_userdata'
+                `--user-data-dir=/tmp/webdriverio_userdata_${process.pid}`
             ]
         }
     }],

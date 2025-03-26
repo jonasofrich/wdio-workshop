@@ -60,12 +60,7 @@ export const config: WebdriverIO.Config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        browserName: 'chrome',
-        "goog:chromeOptions": {
-            args: [
-                `--user-data-dir=/tmp/webdriverio_userdata_${process.pid}`
-            ]
-        }
+        browserName: 'chrome'
     }],
 
     //
